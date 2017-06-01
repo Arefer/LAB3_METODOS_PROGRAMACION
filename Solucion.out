@@ -1,0 +1,10 @@
+Palabras en ambas sopas:
+- cama
+ Coordenadas sopa 1:  (4, 4) (4, 3) (3, 3) (3, 2)
+ Coordenadas sopa 2:  (4, 3) (4, 2) (4, 1) (4, 0)
+- casa
+ Coordenadas sopa 1:  (4, 4) (4, 3) (4, 2) (3, 2)
+ Coordenadas sopa 2:  (1, 1) (1, 2) (1, 3) (1, 4)
+- masa
+ Coordenadas sopa 1:  (3, 3) (3, 2) (4, 2) (4, 3)
+ Coordenadas sopa 2:  (2, 4) (1, 4) (1, 3) (1, 2)
