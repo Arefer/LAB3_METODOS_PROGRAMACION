@@ -29,20 +29,18 @@ public class Principal{
         
         Abecedario abc = new Abecedario();
         // Genero todas las palabras posibles de la forma consonante-vocal-consonante-vocal
-        //ArrayList<String> palabrasABuscar = abc.generarCombinaciones();
         ArrayList<String> palabrasABuscar =  abc.generarCombinaciones();        
         // Resuelvo la primera sopa de letras 
         Sopa sopa1 = new Sopa(sopaDeLetras1);
         ArrayList<String> encontradas1 = sopa1.resolverSopa(palabrasABuscar);
-        /*
-        System.out.println("Encontradas en la sopa 1:");
-        for (String palabra: encontradas1){
-            System.out.println(palabra);
-        }*/
         // Resuelvo la segunda sopa de letras con las palabras encontradas en la primera
         Sopa sopa2 = new Sopa(sopaDeLetras2);
         ArrayList<String> encontradas2 = sopa2.resolverSopa(encontradas1);
-        
+        System.out.println("Palabras en ambas sopas:");
+        for (String palabra: encontradas2){
+            System.out.println(" -" + palabra);
+        }
+        System.out.println();
         Archivo respuesta = new Archivo("Solucion.out");
         if (respuesta.escribirResultado(encontradas1, encontradas2, sopa1, sopa2)){
             System.out.println("Resultado escrito correctamente en 'Solucion.out'");
